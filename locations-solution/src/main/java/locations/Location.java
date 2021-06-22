@@ -63,14 +63,6 @@ public class Location {
         return Math.sqrt(distance);
     }
 
-    public boolean isOnEquator() {
-        return lat == 0;
-    }
-
-    public boolean isOnPrimeMeridian() {
-        return lon == 0;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

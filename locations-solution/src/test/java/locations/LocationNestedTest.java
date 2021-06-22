@@ -1,47 +1,57 @@
 package locations;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Nested;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.*;
 
 public class LocationNestedTest {
 
     private LocationParser locationParser;
 
+    @BeforeEach
+    void setUp() {
+        locationParser = new LocationParser();
+    }
+
     @Nested
-    class WithZero {
+    class FirstFavouriteLocation {
+
+        Location favouriteLocation;
 
         @BeforeEach
-        void init() {
-            locationParser = new LocationParser();
+        void setUp() {
+            favouriteLocation = new Location("Equator", 0.0, 0.0);
         }
 
         @Test
-        void testLocation() {
-            Location temp = locationParser.parse("Equator, 0, 0");
-            assertAll(
-                    () -> assertTrue(temp.isOnEquator()),
-                    () -> assertTrue(temp.isOnPrimeMeridian())
-            );
+        @DisplayName("Equator")
+        void testIsOnEquator() {
+            Assertions.assertTrue(locationParser.isOnEquator(favouriteLocation));
+        }
+
+        @Test
+        @DisplayName("Meridian")
+        void testIsOnPrimeMeridian() {
+            Assertions.assertTrue(locationParser.isOnPrimeMeridian(favouriteLocation));
         }
     }
 
     @Nested
-    class WithParam {
-
+    class SecondFavouriteLocation {
+        Location favouriteLocation;
         @BeforeEach
-        void init() {
-            locationParser = new LocationParser();
+        void setUp() {
+            favouriteLocation = new Location("BÓhat-Pusztakócs", 47.62603, 20.94815);
         }
 
         @Test
-        void testLocation() {
-            Location temp = locationParser.parse("Óhat-Pusztakócs, 47.62603, 20.94815");
-            assertAll(
-                    () -> assertFalse(temp.isOnEquator()),
-                    () -> assertFalse(temp.isOnPrimeMeridian())
-            );
+        @DisplayName("NotOnEquator")
+        void testIsOnEquatorNotOnEquator() {
+            Assertions.assertFalse(locationParser.isOnEquator(favouriteLocation));
+        }
+
+        @Test
+        @DisplayName("NotOnMeridian")
+        void testIsOnPrimeMeridianNotOnPrimeMeridian() {
+            Assertions.assertFalse(locationParser.isOnPrimeMeridian(favouriteLocation));
         }
     }
 }

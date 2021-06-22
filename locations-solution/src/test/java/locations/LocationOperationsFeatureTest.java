@@ -10,6 +10,6 @@ import java.lang.annotation.Target;
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Test
-@Tag("operations feature")
+@Tag("operationsFeature")
 public @interface LocationOperationsFeatureTest {
 }
