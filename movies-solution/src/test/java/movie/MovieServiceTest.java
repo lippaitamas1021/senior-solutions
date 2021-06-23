@@ -5,9 +5,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import java.util.List;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class MovieServiceTest {
+class MovieServiceTest {
 
     MovieService movieService = new MovieService();
 
@@ -21,7 +21,7 @@ public class MovieServiceTest {
     @Test
     void saveTest() {
         movieService.save(new Movie("A tanú", 112, LocalDate.of(1969, 10, 21)));
-        Assertions.assertTrue(movieService.getMovies().contains(new Movie("A tanú", 112, LocalDate.of(1969, 10, 21))));
+        Assertions.assertTrue(movieService.listMovies().contains(new Movie("A tanú", 112, LocalDate.of(1969, 10, 21))));
     }
 
     @Test
