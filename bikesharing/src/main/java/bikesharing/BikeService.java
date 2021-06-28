@@ -67,10 +67,4 @@ public class BikeService {
             readFromFile();
         }
     }
-
-    public static void main(String[] args) {
-        BikeService bikeService = new BikeService(new ModelMapper());
-        bikeService.readFromFile();
-        System.out.println(bikeService.shares);
-    }
 }
