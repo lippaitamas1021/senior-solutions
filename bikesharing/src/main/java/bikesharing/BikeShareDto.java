@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 public class BikeShareDto {
 
     private String bikeId;
-    private String lastRiderId;
-    private LocalDateTime checkIn;
+    private String userId;
+    private LocalDateTime dateTime;
     private double distance;
 }

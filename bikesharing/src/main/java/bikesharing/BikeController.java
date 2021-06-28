@@ -7,7 +7,7 @@ import java.util.List;
 @RestController
 public class BikeController {
 
-    private final BikeService bikeService;
+    private BikeService bikeService;
 
     public BikeController(BikeService bikeService) {
         this.bikeService = bikeService;

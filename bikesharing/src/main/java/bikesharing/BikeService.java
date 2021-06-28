@@ -2,12 +2,13 @@ package bikesharing;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-import java.util.Scanner;
 import java.util.stream.Collectors;
 
 @Service
@@ -21,21 +22,26 @@ public class BikeService {
     }
 
     public List<BikeShare> getShares() {
-        return shares;
+        return new ArrayList<>(shares);
     }
 
-    private void readFromFile() {
-        Scanner scanner = new Scanner(Objects.requireNonNull(BikeService.class.getResourceAsStream("/bikes.csv")));
-            while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
-                String[] temp = line.split(";");
-                String bikeId = temp[0];
-                String userId = temp[1];
-                LocalDateTime dateTime = dateTimeParser(temp[2]);
-                double distance = Double.parseDouble(temp[3]);
-                shares.add(new BikeShare(bikeId, userId, dateTime, distance));
+    public void readFromFile() {
+        try {
+            List<String> lines = Files.readAllLines(Path.of("D:\\senior-solutions\\bikesharing\\bikes.csv"));
+            lines.forEach(this::addBikeShare);
+        } catch (IOException ioe) {
+            throw new IllegalArgumentException("Can not read the file", ioe);
         }
     }
+
+    private void addBikeShare(String lines){
+        String[] temp = lines.split(";");
+        String bikeId = temp[0];
+        String userId = temp[1];
+        LocalDateTime dateTime = dateTimeParser(temp[2]);
+        double distance = Double.parseDouble(temp[3]);
+        shares.add(new BikeShare(bikeId, userId, dateTime, distance));
+        }
 
     private LocalDateTime dateTimeParser(String dateTime) {
         return LocalDateTime.parse(dateTime, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
@@ -57,7 +63,7 @@ public class BikeService {
     }
 
     private void listChecker() {
-        if (shares == null) {
+        if (shares.isEmpty()) {
             readFromFile();
         }
     }

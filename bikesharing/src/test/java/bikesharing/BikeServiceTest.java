@@ -20,7 +20,7 @@ public class BikeServiceTest {
         List<BikeShareDto> result = bikeService.getAllShares();
         assertThat(result)
                 .extracting(BikeShareDto::getBikeId)
-                .containsOnly("FH676");
+                .contains("FH676");
     }
 
     @Test
