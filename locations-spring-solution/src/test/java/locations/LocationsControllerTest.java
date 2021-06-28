@@ -6,9 +6,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import java.util.Arrays;
-import java.util.Collections;
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.List;
+import java.util.Optional;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -22,16 +21,10 @@ class LocationsControllerTest {
 
     @Test
     void getLocationsTest() {
-        when(locationsService.getLocations()).thenReturn(Arrays.asList(
-                new Location("Óhat-Pusztakócs"), new Location("Záhony")
-        ));
-        String result = locationsController.getLocations().toString();
+        when(locationsService.getLocations(Optional.empty())).thenReturn(List.of(
+                new LocationDto(11, "Záhony", 47.89745, 18.25697),
+                new LocationDto(12, "Óhat-Pusztakócs", 47.15678, 18.36745)));
+        String result = locationsController.getLocations(Optional.empty()).toString();
         Assertions.assertThat(result).contains("Záhony");
-    }
-
-    @Test
-    void getLocationsByNamePrefixTest() {
-        when(locationsService.getLocationsByNamePrefix("vár")).thenReturn(Collections.singletonList(new Location("Kisvárda")));
-        assertEquals(1, locationsService.getLocationsByNamePrefix("vár").size());
     }
 }

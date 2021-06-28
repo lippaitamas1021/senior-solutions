@@ -1,0 +1,32 @@
+###
+GET http://localhost:8080/api/locations/
+Accept: application/json
+
+###
+GET http://localhost:8080/api/locations/5
+Accept: application/json
+
+###
+POST http://localhost:8080/api/locations
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Moszkva",
+  "lat": 55.76961,
+  "lon": 37.63722
+}
+
+###
+PUT http://localhost:8080/api/locations/5
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Bécs",
+  "lat": 48.19320,
+  "lon": 16.35887
+}
+
+###
+DELETE http://localhost:8080/api/locations/2
