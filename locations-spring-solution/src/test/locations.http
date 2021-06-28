@@ -12,9 +12,9 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "name": "Moszkva",
-  "lat": 55.76961,
-  "lon": 37.63722
+  "name": "Gelej",
+  "lat": 47.82740,
+  "lon": 20.77570
 }
 
 ###
@@ -23,9 +23,9 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "name": "Bécs",
-  "lat": 48.19320,
-  "lon": 16.35887
+  "name": "Tar",
+  "lat": 47.95047,
+  "lon": 19.74185
 }
 
 ###
