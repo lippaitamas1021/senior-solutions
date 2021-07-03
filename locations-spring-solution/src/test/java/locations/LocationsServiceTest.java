@@ -1,6 +1,8 @@
 package locations;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.modelmapper.ModelMapper;
 import java.util.Optional;
@@ -8,37 +10,32 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LocationsServiceTest {
 
-    LocationsService locationsService;
-
-    @BeforeEach
-    void init() {
-        locationsService = new LocationsService(new ModelMapper());
-    }
-
+    LocationsService locationsService = new LocationsService(new ModelMapper());
+    @DisplayName("getLocations")
     @Test
     void getLocationsTest() {
-        assertEquals("Biri", locationsService.getLocations(Optional.empty()).get(2).getName());
+        assertEquals("Tarpa", locationsService.getLocations(Optional.empty()).get(0).getName());
     }
-
+    @DisplayName("getLocationById")
     @Test
-    void getLocationsByIdTest() {
-        assertEquals("Kemecse", locationsService.getLocationsById(2).getName());
+    void getLocationByIdTest() {
+        assertEquals("Panyola", locationsService.getLocationById(2).getName());
+    }
+    @DisplayName("updateLocation")
+    @Test
+    void updateLocationTest() {
+        UpdateLocationCommand locationToUpdate = new UpdateLocationCommand(3, "Múcsony", 47.99999, 18.88888);
+        assertEquals("Múcsony", locationsService.updateLocation(3, locationToUpdate).getName());
     }
 
-//    @Test
-//    void updateLocation() {
-//        Location locationToUpdate = new Location(4, "Pácsony", 47.04196, 16.87554);
-//        locationsService.updateLocation(locationToUpdate);
-//        assertEquals("Pácsony", locationsService.getLocations().get(3).getName());
-//    }
-
-//    @Test
-//    void deleteLocation() {
-//        assertEquals(4, locationsService.getLocations().size());
-//        Location locationToDelete = new Location(6, "Türje", 46.98508, 17.09423);
-//        locationsService.addLocation(locationToDelete);
-//        assertEquals(5, locationsService.getLocations().size());
-//        locationsService.deleteLocation(locationToDelete.getId());
-//        assertEquals(4, locationsService.getLocations().size());
-//    }
+    @DisplayName("deleteLocation")
+    @Test
+    void deleteLocation() {
+        Assertions.assertEquals(3, locationsService.getLocations(Optional.empty()).size());
+        CreateLocationCommand locationToDelete = new CreateLocationCommand(1, "Türje", 46.98508, 17.09423);
+        locationsService.createLocation(locationToDelete);
+        Assertions.assertEquals(4, locationsService.getLocations(Optional.empty()).size());
+        locationsService.deleteLocation(locationToDelete.getId());
+        Assertions.assertEquals(3, locationsService.getLocations(Optional.empty()).size());
+    }
 }

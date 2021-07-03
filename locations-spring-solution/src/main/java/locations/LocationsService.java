@@ -15,81 +15,61 @@ import java.util.stream.Collectors;
 public class LocationsService {
 
     private ModelMapper modelMapper;
-
     private AtomicLong idGen = new AtomicLong();
-
+    private List<LocationDto> favLocations = Collections.synchronizedList(new ArrayList<>(List.of(
+            new LocationDto(1, "Tarpa", 47.85617, 19.257301),
+            new LocationDto(2, "Panyola", 47.16497, 19.87642),
+            new LocationDto(3, "Jánd", 47.56701, 19.91465)
+    )));
     public LocationsService(ModelMapper modelMapper) {
         this.modelMapper = modelMapper;
+        idGen.getAndAdd(3);
     }
-
-    private List<Location> locations = Collections.synchronizedList(new ArrayList<>(
-            List.of(
-                    new Location(1, "Bükkszentkereszt", 48.06673, 20.63469),
-                    new Location(2, "Kemecse", 48.06762, 21.79969),
-                    new Location(3, "Biri", 47.81238, 21.85451),
-                    new Location(4, "Kiskunhalas", 46.42900, 19.48831)
-            ))
-    );
 
     public List<LocationDto> getLocations(Optional<String> prefix) {
-        Type targetListType = new TypeToken<List<LocationDto>>(){}.getType();
-        List<Location> filteredLocations = locations.stream()
-                .filter(location -> prefix.isEmpty() || location.getName().startsWith(prefix.get()))
+        Type targetListType =
+                new TypeToken<List<LocationDto>>(){}.getType();
+        List<LocationDto> filtered = favLocations.stream()
+                .filter(loc -> prefix.isEmpty() || loc.getName().startsWith(prefix.get()))
                 .collect(Collectors.toList());
-        return modelMapper.map(filteredLocations, targetListType);
+        return modelMapper.map(filtered, targetListType);
     }
 
-    public LocationDto getLocationsById(long id) {
-        return modelMapper.map(locations.stream()
-                        .filter(location -> location.getId() == id)
+    public LocationDto getLocationById(long id) {
+        return modelMapper.map(favLocations.stream()
+                        .filter(locationDto -> locationDto.getId() == id)
                         .findAny()
-                        .orElseThrow(() -> new IllegalArgumentException("Location with id: " + id + " not found.")),
+                        .orElseThrow(() -> new IllegalArgumentException("Location with id " + id + " not found")),
                 LocationDto.class);
-    }
-
-    public List<LocationDto> getLocationsByNameLatLon(Optional<String> prefix,
-                                                      Optional<Double> minLat,
-                                                      Optional<Double> maxLat,
-                                                      Optional<Double> minLon,
-                                                      Optional<Double> maxLon) {
-        Type targetListType = new TypeToken<List<LocationDto>>(){}.getType();
-        List<Location> filteredLocations = locations.stream()
-                .filter(location -> prefix.isEmpty() || location.getName().startsWith(prefix.get()))
-                .filter(location -> minLat.isEmpty() || location.getLat() >= minLat.get())
-                .filter(location -> maxLat.isEmpty() || location.getLat() <= maxLat.get())
-                .filter(location -> minLon.isEmpty() || location.getLon() >= minLon.get())
-                .filter(location -> maxLon.isEmpty() || location.getLon() <= maxLon.get())
-                .collect(Collectors.toList());
-        return modelMapper.map(filteredLocations, targetListType);
     }
 
     public LocationDto createLocation(CreateLocationCommand command) {
         Location location = new Location(idGen.incrementAndGet(), command.getName(), command.getLat(), command.getLon());
-        locations.add(location);
+        favLocations.add(modelMapper.map(location, LocationDto.class));
         return modelMapper.map(location, LocationDto.class);
     }
 
     public LocationDto updateLocation(long id, UpdateLocationCommand command) {
-        Location location = locations.stream()
-                .filter(loc -> loc.getId() == id)
+        LocationDto locationToUpdate = favLocations.stream()
+                .filter(locationDto -> locationDto.getId() == id)
                 .findFirst()
-                .orElseThrow(() -> new LocationNotFoundException("Location with id: " + id + " not found."));
-        location.setName(command.getName());
-        location.setLat(command.getLat());
-        location.setLon(command.getLon());
-        return modelMapper.map(location, LocationDto.class);
+                .orElseThrow(() -> new IllegalArgumentException("Location with id " + id + "not found"));
+        locationToUpdate.setName(command.getName());
+        locationToUpdate.setLat(command.getLat());
+        locationToUpdate.setLon(command.getLon());
+        return modelMapper.map(locationToUpdate, LocationDto.class);
     }
 
     public void deleteLocation(long id) {
-        Location location = locations.stream()
-                .filter(loc -> loc.getId() == id)
+        LocationDto locationToDelete = favLocations.stream()
+                .filter(locationDto -> locationDto.getId() == id)
                 .findFirst()
-                .orElseThrow(() -> new IllegalArgumentException("Location with id: " + id + " not found."));
-        locations.remove(location);
+                .orElseThrow(() -> new IllegalArgumentException("Location with id " + id + "not found"));
+        favLocations.remove(locationToDelete);
     }
 
     public void deleteAllLocations() {
         idGen = new AtomicLong();
-        locations.clear();
+        favLocations.clear();
     }
 }

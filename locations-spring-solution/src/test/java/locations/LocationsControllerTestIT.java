@@ -1,10 +1,10 @@
 package locations;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import java.util.Optional;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 public class LocationsControllerTestIT {
@@ -14,7 +14,6 @@ public class LocationsControllerTestIT {
 
     @Test
     void getLocationsTest() {
-        String result = locationsController.getLocations(Optional.empty()).toString();
-        Assertions.assertThat(result).contains("Kemecse");
+        assertEquals(3, locationsController.getLocations(Optional.empty()).size());
     }
 }
