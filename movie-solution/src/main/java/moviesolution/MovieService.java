@@ -41,4 +41,8 @@ public class MovieService {
         movie.addRating(command.getRating());
         return modelMapper.map(movie, MovieDto.class);
     }
+
+    public MovieDto getMovie(long id) {
+        return modelMapper.map(findById(id), MovieDto.class);
+    }
 }
