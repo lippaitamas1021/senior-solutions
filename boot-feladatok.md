@@ -7,9 +7,9 @@ Kérlek jelöld be, hogy melyik gyakorlati feladatokat oldottad meg!
 * [x] Spring Beanek
 * [x] Konfiguráció Javaban
 * [x] Build és futtatás Mavennel
-* [ ] Build és futtatás Gradle használatával
+* [x] Build és futtatás Gradle használatával
 * [x] Unit és integrációs tesztek
-* [ ] Developer Tools
+* [x] Developer Tools
 * [x] Twelve Factor App
 * [x] Bevezetés a Docker használatába
 * [x] Java alkalmazások Dockerrel
