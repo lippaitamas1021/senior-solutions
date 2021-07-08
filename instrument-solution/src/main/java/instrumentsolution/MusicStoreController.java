@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Optional;
 import org.zalando.problem.Problem;
 import org.zalando.problem.Status;
-
 import javax.validation.Valid;
 
 @RestController

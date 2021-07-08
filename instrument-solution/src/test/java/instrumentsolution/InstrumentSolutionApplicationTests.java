@@ -9,5 +9,4 @@ class InstrumentSolutionApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
