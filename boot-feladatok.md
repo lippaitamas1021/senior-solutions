@@ -20,13 +20,13 @@ Kérlek jelöld be, hogy melyik gyakorlati feladatokat oldottad meg!
 * [x] REST webszolgáltatások POST és DELETE művelet
 * [x] Státuszkódok és hibakezelés
 * [x] Integrációs tesztelés
-* [ ] Swagger UI
-* [ ] Tesztelés Rest Assured használatával
-* [ ] Rest Assured séma validáció
-* [ ] Content Negotiation
-* [ ] Validáció
-* [ ] Spring Boot konfiguráció
-* [ ] Spring Boot naplózás
+* [X] Swagger UI
+* [X] Tesztelés Rest Assured használatával
+* [X] Rest Assured séma validáció
+* [X] Content Negotiation
+* [X] Validáció
+* [X] Spring Boot konfiguráció
+* [X] Spring Boot naplózás
 * [ ] Spring JdbcTemplate
 * [ ] Spring Data JPA
 * [ ] MariaDB
