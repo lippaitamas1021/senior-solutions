@@ -14,10 +14,13 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 
 @WebMvcTest(LocationsController.class)
 public class LocationControllerWebMvcIT {
+
     @MockBean
     LocationsService locationsService;
+
     @Autowired
     MockMvc mockMvc;
+
     @Test
     void getLocationsTest() throws Exception {
         when(locationsService.getLocations(any())).thenReturn(new ArrayList<>(List.of(

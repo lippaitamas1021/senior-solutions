@@ -3,6 +3,8 @@ package locations;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
 @Data
@@ -10,11 +12,14 @@ import javax.validation.constraints.NotBlank;
 @AllArgsConstructor
 public class UpdateLocationCommand {
 
-    private long id;
-    @NotBlank(message = "Name can not be blank")
+    @NotBlank(message = "Name can not stay blank")
     private String name;
-    @NotBlank(message = "Lat can not be blank")
+
+    @Min(value =-90)
+    @Max(value = 90)
     private double lat;
-    @NotBlank(message = "Lon can not be blank")
+
+    @Min(value = -180)
+    @Max(value = 180)
     private double lon;
 }

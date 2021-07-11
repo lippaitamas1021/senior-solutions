@@ -18,14 +18,16 @@ class LocationsControllerTest {
 
     @Mock
     LocationsService locationsService;
+
     @InjectMocks
     LocationsController locationsController;
+
     @Test
     void getLocationsTest() {
         when(locationsService.getLocations(Optional.empty())).thenReturn(new ArrayList<>(List.of(
-                new LocationDto(1, "Tarpa", 47.85617, 19.257301),
-                new LocationDto(2, "Panyola", 47.16497, 19.87642),
-                new LocationDto(3, "Jánd", 47.56701, 19.91465)
+                new LocationDto("Tarpa", 47.85617, 19.257301),
+                new LocationDto("Panyola", 47.16497, 19.87642),
+                new LocationDto("Jánd", 47.56701, 19.91465)
         )));
         assertAll(
                 () -> assertThat(locationsController.getLocations(Optional.empty()).toString().contains("Tarpa")),

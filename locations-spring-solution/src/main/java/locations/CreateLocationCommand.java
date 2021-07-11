@@ -1,5 +1,6 @@
 package locations;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,10 +12,22 @@ import javax.validation.constraints.NotBlank;
 public class CreateLocationCommand {
 
     private long id;
+
     @NotBlank(message = "Name can not be blank")
+    @Schema(description = "Name of location: ", example = "Szabolcsbáka")
     private String name;
-    @NotBlank(message = "Lon can not be blank")
+
+    @Coordinate
+    @Schema(description = "Latitude of the location ")
     private double lat;
-    @NotBlank(message = "Lon can not be blank")
+
+    @Coordinate
+    @Schema(description = "Longitude of the location ")
     private double lon;
+
+    public CreateLocationCommand(String name, double lat, double lon) {
+        this.name = name;
+        this.lat = lat;
+        this.lon = lon;
+    }
 }

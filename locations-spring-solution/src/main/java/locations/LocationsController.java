@@ -1,88 +1,61 @@
 package locations;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
-import java.net.URI;
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
-import org.zalando.problem.Problem;
-import org.zalando.problem.Status;
-import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/api/locations")
+@RequestMapping(value = "/locations", produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+@Tag(name = "Locations MicroService")
 public class LocationsController {
 
     private final LocationsService locationsService;
+
     public LocationsController(LocationsService locationsService) {
         this.locationsService = locationsService;
     }
 
     @GetMapping
+    @Operation(summary = "List of all locations")
+    @ApiResponse(responseCode = "200", description = "Successful query")
     public List<LocationDto> getLocations(@RequestParam Optional<String> prefix) {
         return locationsService.getLocations(prefix);
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity getLocationById(@PathVariable("id") long id) {
-        try {
-            return ResponseEntity.ok(locationsService.getLocationById(id));
-        } catch (IllegalArgumentException iae) {
-            return ResponseEntity.notFound().build();
-        }
+    @GetMapping(value = "/{id}")
+    @Operation(summary = "Location found by id")
+    @ApiResponse(responseCode = "200", description = "Location found")
+    @ApiResponse(responseCode = "404", description = "Location not found")
+    public LocationDto getLocationById(@PathVariable("id") long id) {
+            return locationsService.getLocationById(id);
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
+    @Operation(summary = "Creates a location")
+    @ApiResponse(responseCode = "201", description = "Creation completed")
     public LocationDto createLocation(@Valid @RequestBody CreateLocationCommand command) {
         return locationsService.createLocation(command);
     }
 
     @PutMapping("/{id}")
-    public LocationDto updateLocation(@PathVariable("id") long id, @RequestBody UpdateLocationCommand command) {
+    @Operation(summary = "Update location")
+    @ApiResponse(responseCode = "200", description = "Update completed")
+    public LocationDto updateLocation(@PathVariable("id") long id, @Valid @RequestBody UpdateLocationCommand command) {
         return locationsService.updateLocation(id, command);
     }
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
+    @Operation(summary = "Delete location")
+    @ApiResponse(responseCode = "204", description = "Deletion completed")
     public void deleteLocation(@PathVariable("id") long id) {
         locationsService.deleteLocation(id);
-    }
-
-    @ExceptionHandler({IllegalArgumentException.class})
-    @ResponseStatus(HttpStatus.NOT_FOUND)
-    public ResponseEntity<Problem> handlerNotFound(IllegalArgumentException iae) {
-        Problem problem = Problem.builder()
-                .withType(URI.create("locations/location-not-found"))
-                .withTitle("Not found")
-                .withStatus(Status.NOT_FOUND)
-                .withDetail(iae.getMessage())
-                .build();
-        return ResponseEntity
-                .status(HttpStatus.NOT_FOUND)
-                .contentType(MediaType.APPLICATION_PROBLEM_JSON)
-                .body(problem);
-    }
-
-    @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ResponseEntity<Problem> handleValidException (MethodArgumentNotValidException exception) {
-        List<Violation> violations = exception.getBindingResult().getFieldErrors().stream()
-                .map(fe -> new Violation(fe.getField(), fe.getDefaultMessage()))
-                .collect(Collectors.toList());
-        Problem problem = Problem.builder()
-                .withType(URI.create("locations/not-valid"))
-                .withTitle("Validation error")
-                .withStatus(Status.BAD_REQUEST)
-                .withDetail(exception.getMessage())
-                .with("violations", violations)
-                .build();
-        return ResponseEntity
-                .status(HttpStatus.BAD_REQUEST)
-                .contentType(MediaType.APPLICATION_PROBLEM_JSON)
-                .body(problem);
     }
 }
