@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.xml.bind.annotation.XmlRootElement;
-import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -13,5 +12,5 @@ import java.util.List;
 @XmlRootElement
 public class LocationsDTO {
 
-    private List<LocationDto> locations = new ArrayList<>();
+    private List<LocationDto> locations;
 }

@@ -37,4 +37,8 @@ public class LocationDto {
         this.lat = lat;
         this.lon = lon;
     }
+
+    public LocationDto(String name) {
+        this.name = name;
+    }
 }

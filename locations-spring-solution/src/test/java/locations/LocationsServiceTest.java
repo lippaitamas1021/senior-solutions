@@ -4,12 +4,17 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.modelmapper.ModelMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
 import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LocationsServiceTest {
 
-    LocationsService locationsService = new LocationsService(new ModelMapper());
+    JdbcTemplate jdbcTemplate = new JdbcTemplate();
+
+    LocationsDAO locationsDAO = new LocationsDAO(jdbcTemplate);
+
+    LocationsService locationsService = new LocationsService(new ModelMapper(), locationsDAO);
 
     @DisplayName("getLocations")
     @Test

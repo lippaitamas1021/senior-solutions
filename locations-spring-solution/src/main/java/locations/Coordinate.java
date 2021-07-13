@@ -16,5 +16,5 @@ public @interface Coordinate {
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 
-//    Type type() default Type.LAT;
+    Type type() default Type.LAT;
 }

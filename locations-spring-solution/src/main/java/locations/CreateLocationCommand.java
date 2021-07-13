@@ -21,7 +21,7 @@ public class CreateLocationCommand {
     @Schema(description = "Latitude of the location ")
     private double lat;
 
-    @Coordinate
+    @Coordinate(type = Type.LON)
     @Schema(description = "Longitude of the location ")
     private double lon;
 
@@ -29,5 +29,9 @@ public class CreateLocationCommand {
         this.name = name;
         this.lat = lat;
         this.lon = lon;
+    }
+
+    public CreateLocationCommand(String name) {
+        this.name = name;
     }
 }
