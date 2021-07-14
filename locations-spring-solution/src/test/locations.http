@@ -15,9 +15,9 @@ Content-Type: application/json
 Accept: application/json
 
 {
-    "name": "Parasznya",
-    "lat": 47.54791,
-    "lon": 19.81674
+    "name": "Őr",
+    "lat": 48.54791,
+    "lon": 18.81674
 }
 
 ###
@@ -51,7 +51,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "name": "",
+  "name": "Ajka",
   "lat": -147.54791,
   "lon": 219.81674
 }

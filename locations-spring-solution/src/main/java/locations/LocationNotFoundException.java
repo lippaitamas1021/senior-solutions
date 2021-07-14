@@ -1,15 +1,15 @@
 package locations;
 
-public class LocationNotFoundException extends RuntimeException {
+import org.zalando.problem.AbstractThrowableProblem;
+import org.zalando.problem.Status;
+import java.net.URI;
+
+public class LocationNotFoundException extends AbstractThrowableProblem {
 
     public LocationNotFoundException() {
-    }
-
-    public LocationNotFoundException(String message) {
-        super(message);
-    }
-
-    public LocationNotFoundException(String message, Throwable cause) {
-        super(message, cause);
+        super(URI.create("locations/not found"),
+                "Not found",
+                Status.NOT_FOUND,
+                "Location not found");
     }
 }

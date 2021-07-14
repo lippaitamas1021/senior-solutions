@@ -4,7 +4,6 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import javax.validation.constraints.NotBlank;
 
 @Data
 @NoArgsConstructor
@@ -13,7 +12,7 @@ public class CreateLocationCommand {
 
     private long id;
 
-    @NotBlank(message = "Name can not be blank")
+    @isValidName(message = "The name is wrong", minLength = 2)
     @Schema(description = "Name of location: ", example = "Szabolcsbáka")
     private String name;
 
