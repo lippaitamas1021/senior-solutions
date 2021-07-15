@@ -1,10 +1,9 @@
 package activities;
 
-import com.mysql.cj.jdbc.MysqlDataSource;
-import org.flywaydb.core.Flyway;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.*;
@@ -15,15 +14,9 @@ class ActivityDAOTest {
 
     @BeforeEach
     void setUp() {
-        MysqlDataSource dataSource = new MysqlDataSource();
-        dataSource.setURL("jdbc:mysql://localhost/activities");
-        dataSource.setUser("activities");
-        dataSource.setPassword("activities");
-        Flyway flyway = Flyway.configure().dataSource(dataSource).load();
-        flyway.clean();
-        flyway.migrate();
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("pu");
-        activityDAO = new ActivityDAO(entityManagerFactory);
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("pu");
+        EntityManager em = factory.createEntityManager();
+        activityDAO = new ActivityDAO(factory);
     }
 
     @Test
@@ -61,5 +54,18 @@ class ActivityDAOTest {
         activityDAO.delete(id);
         List<Activity> activities = activityDAO.listAll();
         assertTrue(activities.isEmpty());
+    }
+
+    @Test
+    public void testWithWrongId() {
+        Activity activity = activityDAO.findById(21);
+        assertEquals(null, activity);
+    }
+
+    @Test
+    public void testActivityWithAttributes() {
+        activityDAO.save(new Activity("learning", ActivityType.STATIC, LocalDate.of(2021, 7, 14)));
+        Activity activity = activityDAO.listAll().get(0);
+        assertEquals(LocalDate.of(2021,7,14), activity.getDate());
     }
 }
