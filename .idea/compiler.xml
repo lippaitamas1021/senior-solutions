@@ -2,24 +2,47 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.20/18bcea7d5df4d49227b4a0743a536208ce4825bb/lombok-1.18.20.jar" />
+        </processorPath>
+        <module name="locations-gradle-solution.main" />
+      </profile>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cars-solution" />
+        <module name="locations-spring-solution" />
+        <module name="europeanchampionship-solution" />
+        <module name="movies-solution" />
+        <module name="nav-solution" />
+        <module name="movie-solution" />
         <module name="locations-solution" />
-        <module name="locations spring-solution" />
         <module name="meetingrooms-solution" />
-        <module name="employees-solution" />
+        <module name="instrument-solution" />
+        <module name="bikesharing" />
         <module name="streamsdemo-solution" />
+        <module name="employees-fe-solution" />
+        <module name="activitytracker-solution" />
+        <module name="employees-solution" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="employees-solution" target="15" />
-      <module name="locations spring-solution" target="15" />
-      <module name="locations-solution" target="15" />
-      <module name="meetingrooms-solution" target="15" />
-      <module name="senior-solutions" target="15" />
-      <module name="streamsdemo-solution" target="15" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="16" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="activitytracker-solution" options="-parameters" />
+      <module name="bikesharing" options="-parameters" />
+      <module name="cars-solution" options="-parameters" />
+      <module name="employees-fe-solution" options="-parameters" />
+      <module name="instrument-solution" options="-parameters" />
+      <module name="locations-spring-solution" options="-parameters" />
+      <module name="movie-solution" options="-parameters" />
+      <module name="movies-solution" options="-parameters" />
+      <module name="nav-solution" options="-parameters" />
+    </option>
   </component>
 </project>

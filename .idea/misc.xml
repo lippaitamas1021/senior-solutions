@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/locations spring-solution" />
+    <file type="web" url="file://$PROJECT_DIR$/locations-gradle solution" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/employees-solution/pom.xml" />
         <option value="$PROJECT_DIR$/locations-solution/pom.xml" />
-        <option value="$PROJECT_DIR$/locations spring-solution/pom.xml" />
         <option value="$PROJECT_DIR$/meetingrooms-solution/pom.xml" />
         <option value="$PROJECT_DIR$/streamsdemo-solution/pom.xml" />
+        <option value="$PROJECT_DIR$/cars-solution/pom.xml" />
+        <option value="$PROJECT_DIR$/europeanchampionship-solution/pom.xml" />
+        <option value="$PROJECT_DIR$/movies-solution/pom.xml" />
+        <option value="$PROJECT_DIR$/locations-spring-solution/pom.xml" />
+        <option value="$PROJECT_DIR$/bikesharing/pom.xml" />
+        <option value="$PROJECT_DIR$/movie-solution/pom.xml" />
+        <option value="$PROJECT_DIR$/instrument-solution/pom.xml" />
+        <option value="$PROJECT_DIR$/activitytracker-solution/pom.xml" />
+        <option value="$PROJECT_DIR$/nav-solution/pom.xml" />
+        <option value="$PROJECT_DIR$/employees-fe/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="15" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="16" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
