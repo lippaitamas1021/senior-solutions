@@ -4,35 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="nav-solution">
+    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="log files">
+      <change afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityId.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/static/css/activities.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/static/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/static/js/activities.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_19_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_all_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_api_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_5_8_0_M1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivitytrackerSolutionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivitytrackerSolutionApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/test/java/activities/ActivityDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/test/java/activities/ActivityDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/test/java/activities/ActivitytrackerSolutionApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/test/java/activities/ActivitytrackerSolutionApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,8 +67,8 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -129,6 +112,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="activities" />
       <recent name="nav" />
       <recent name="locations" />
       <recent name="instrumentsolution" />
@@ -152,16 +136,27 @@
       <recent name="bikesharing" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.EmployeesApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.ActivitiesMain">
+    <configuration name="ActivitiesMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activities.ActivitiesMain" />
+      <module name="activitytracker-solution" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="activities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -170,9 +165,6 @@
       <method v="2" />
     </configuration>
     <configuration name="nav#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/nav-solution/src/test/java/nav/nav.http" index="2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="nav#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/nav-solution/src/test/java/nav/nav.http" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="ActivityDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -240,11 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.nav#2" />
-        <item itemvalue="HTTP Request.nav#1" />
-        <item itemvalue="HTTP Request.nav#3" />
+        <item itemvalue="Application.ActivitiesMain" />
         <item itemvalue="Spring Boot.ActivitytrackerSolutionApplication" />
         <item itemvalue="JUnit.ActivityDAOTest" />
+        <item itemvalue="HTTP Request.nav#2" />
+        <item itemvalue="HTTP Request.nav#1" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +281,8 @@
       <workItem from="1626324047327" duration="4794000" />
       <workItem from="1626440708165" duration="2781000" />
       <workItem from="1626608821013" duration="3710000" />
-      <workItem from="1626674375806" duration="9992000" />
+      <workItem from="1626674375806" duration="11842000" />
+      <workItem from="1626763871716" duration="3375000" />
     </task>
     <task id="LOCAL-00001" summary="bikesharing commit">
       <created>1624820771070</created>
@@ -459,7 +452,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626681790104</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Basic Frontend project">
+      <created>1626687492169</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1626687492169</updated>
+    </task>
+    <task id="LOCAL-00026" summary="log files">
+      <created>1626687538050</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1626687538050</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +510,9 @@
     <MESSAGE value="ActivityTracker project using JPA; (Entity, DAO, Integration test)" />
     <MESSAGE value="JPA configuration" />
     <MESSAGE value="nav-solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="nav-solution" />
+    <MESSAGE value="Basic Frontend project" />
+    <MESSAGE value="log files" />
+    <option name="LAST_COMMIT_MESSAGE" value="log files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

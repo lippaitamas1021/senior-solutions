@@ -20,9 +20,9 @@ public class ActivityDAO {
         em.close();
     }
 
-    public Activity findById(long id) {
+    public Activity findById(String depName, long id) {
         EntityManager em = emf.createEntityManager();
-        Activity activity = em.find(Activity.class, id);
+        Activity activity = em.find(Activity.class, new ActivityId(depName, id));
         em.close();
         return activity;
     }
@@ -34,10 +34,10 @@ public class ActivityDAO {
         return activities;
     }
 
-    public void changeName(long id, String newName) {
+    public void changeName(String depName, long id, String newName) {
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
-        Activity activity = em.find(Activity.class, id);
+        Activity activity = em.find(Activity.class, new ActivityId(depName, id));
         activity.setName(newName);
         em.getTransaction().commit();
         em.close();

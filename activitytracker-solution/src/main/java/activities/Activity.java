@@ -11,13 +11,16 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Entity
 @Table(name = "activities")
+@IdClass(ActivityId.class)
 public class Activity {
 
     @Enumerated(EnumType.STRING)
     private ActivityType activityType = ActivityType.DYNAMIC;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private String depName;
+
+    @Id
     private long id;
 
     @Column(name = "act_name", length = 20, nullable = false)
@@ -33,6 +36,20 @@ public class Activity {
         this.name = name;
         this.activityType = activityType;
         this.date = date;
+    }
+
+    public Activity(String depName, long id, String name) {
+        this.depName = depName;
+        this.id = id;
+        this.name = name;
+    }
+
+    public String getDepName() {
+        return depName;
+    }
+
+    public void setDepName(String depName) {
+        this.depName = depName;
     }
 
     @Override

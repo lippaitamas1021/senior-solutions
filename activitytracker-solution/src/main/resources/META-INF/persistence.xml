@@ -12,7 +12,7 @@
             <property name="javax.persistence.jdbc.user" value="activities"/>
             <property name="javax.persistence.jdbc.password" value="activities"/>
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:mysql://localhost/activities"/>
+                      value="jdbc:mysql://localhost:8080/api/activities"/>
             <property name="hibernate.show_sql" value="true"/>
 <!--            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create" />-->
         </properties>
