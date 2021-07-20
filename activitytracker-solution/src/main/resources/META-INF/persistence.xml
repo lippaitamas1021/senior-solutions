@@ -6,15 +6,15 @@
     <persistence-unit name="pu"
                       transaction-type="RESOURCE_LOCAL">
         <properties>
-            <property name="javax.persistence.schema-generation.database.action"
-                      value="drop-and-create"/>
+<!--            <property name="javax.persistence.schema-generation.database.action"-->
+<!--                      value="drop-and-create"/>-->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.user" value="activities"/>
             <property name="javax.persistence.jdbc.password" value="activities"/>
-            <property name="javax.persistence.jdbc.url"
-                      value="jdbc:mysql://localhost:8080/api/activities"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:8080/api/activities"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDB10Dialect"/>
             <property name="hibernate.show_sql" value="true"/>
-<!--            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create" />-->
+            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create" />
         </properties>
     </persistence-unit>
 </persistence>

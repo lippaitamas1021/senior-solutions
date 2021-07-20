@@ -9,5 +9,4 @@ class ActivitytrackerSolutionApplicationTests {
     @Test
     void contextLoads() {
     }
-
 }

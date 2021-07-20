@@ -14,35 +14,34 @@ class ActivityDAOTest {
 
     @BeforeEach
     void setUp() {
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("pu");
-        EntityManager em = factory.createEntityManager();
-        activityDAO = new ActivityDAO(factory);
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("pu");
+        activityDAO = new ActivityDAO(emf);
     }
 
     @Test
     void testSaveThenFindById() {
-        Activity activity = new Activity("x", 5L, "driving");
+        Activity activity = new Activity("driving");
         activityDAO.save(activity);
         long id = activity.getId();
-        Activity anotherActivity = activityDAO.findById("x", id);
+        Activity anotherActivity = activityDAO.findById(id);
         assertEquals("driving", anotherActivity.getName());
     }
 
     @Test
     void testSaveThenListAll() {
-        activityDAO.save(new Activity("x", 1L, "riding"));
-        activityDAO.save(new Activity("y", 2L, "skiing"));
+        activityDAO.save(new Activity("riding"));
+        activityDAO.save(new Activity("skiing"));
         List<Activity> activities = activityDAO.listAll();
         assertEquals(List.of("riding", "skiing"), activities.stream().map(Activity::getName).collect(Collectors.toList()));
     }
 
     @Test
     public void testChangeName() {
-        Activity activity = new Activity("z", 3L, "driving");
+        Activity activity = new Activity("driving");
         activityDAO.save(activity);
         long id = activity.getId();
-        activityDAO.changeName("v", 4L, "diving");
-        Activity anotherActivity = activityDAO.findById("v", 4L);
+        activityDAO.changeName(id, "diving");
+        Activity anotherActivity = activityDAO.findById(4L);
         assertEquals("diving", anotherActivity.getName());
     }
 
@@ -58,7 +57,7 @@ class ActivityDAOTest {
 
     @Test
     public void testWithWrongId() {
-        Activity activity = activityDAO.findById("m", 21);
+        Activity activity = activityDAO.findById(21);
         assertEquals(null, activity);
     }
 
@@ -69,5 +68,15 @@ class ActivityDAOTest {
         }
         Activity activity = activityDAO.listAll().get(0);
         assertEquals(LocalDate.of(2021,7,14), activity.getDate());
+    }
+
+    @Test
+    public void saveActivityAndChangeState() {
+        Activity activity = new Activity("learning");
+        activityDAO.save(activity);
+        activity.setName("reading");
+        Activity modifiedActivity = activityDAO.findById(activity.getId());
+        assertEquals("learning", modifiedActivity.getName());
+        assertFalse(activity == modifiedActivity);
     }
 }

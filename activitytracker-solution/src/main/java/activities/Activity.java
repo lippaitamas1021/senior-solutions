@@ -1,32 +1,24 @@
 package activities;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.*;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
 @Table(name = "activities")
-@IdClass(ActivityId.class)
 public class Activity {
 
     @Enumerated(EnumType.STRING)
     private ActivityType activityType = ActivityType.DYNAMIC;
-
     @Id
-    private String depName;
-
-    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
     @Column(name = "act_name", length = 20, nullable = false)
     private String name;
-
     private LocalDate date;
+
+    public Activity() {
+    }
 
     public Activity(String name) {
         this.name = name;
@@ -38,18 +30,28 @@ public class Activity {
         this.date = date;
     }
 
-    public Activity(String depName, long id, String name) {
-        this.depName = depName;
+    public long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setId(long id) {
         this.id = id;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
-    public String getDepName() {
-        return depName;
-    }
-
-    public void setDepName(String depName) {
-        this.depName = depName;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     @Override

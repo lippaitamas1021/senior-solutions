@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="log files">
-      <change afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/static/css/activities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/static/js/activities.js" afterDir="false" />
+    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="Simple save &amp; other simple operations by JPA, IT Test, Entity configuration, Primary key">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivitytrackerSolutionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivitytrackerSolutionApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityId.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/test/java/activities/ActivityDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/test/java/activities/ActivityDAOTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/test/java/activities/ActivitytrackerSolutionApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/test/java/activities/ActivitytrackerSolutionApplicationTests.java" afterDir="false" />
@@ -104,9 +101,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/employees-fe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2953105" />
+    <property name="project.structure.side.proportion" value="0.26391983" />
     <property name="settings.editor.selected.configurable" value="spring.boot" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
@@ -136,7 +133,7 @@
       <recent name="bikesharing" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ActivitiesMain">
+  <component name="RunManager" selected="JUnit.ActivityDAOTest">
     <configuration name="ActivitiesMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="activities.ActivitiesMain" />
       <module name="activitytracker-solution" />
@@ -202,6 +199,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CarsSolutionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cars-solution" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cars.CarsSolutionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EmployeesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="employees-fe-solution" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="employees.EmployeesApplication" />
@@ -216,9 +220,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LocationsSpringSolutionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="locations-spring-solution" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="locations.LocationsSpringSolutionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MovieSolutionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="movie-solution" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="moviesolution.MovieSolutionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoviesSolutionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="movies-solution" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="movie.MoviesSolutionApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -232,9 +250,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ActivityDAOTest" />
         <item itemvalue="Application.ActivitiesMain" />
         <item itemvalue="Spring Boot.ActivitytrackerSolutionApplication" />
-        <item itemvalue="JUnit.ActivityDAOTest" />
         <item itemvalue="HTTP Request.nav#2" />
         <item itemvalue="HTTP Request.nav#1" />
       </list>
@@ -282,7 +300,9 @@
       <workItem from="1626440708165" duration="2781000" />
       <workItem from="1626608821013" duration="3710000" />
       <workItem from="1626674375806" duration="11842000" />
-      <workItem from="1626763871716" duration="3375000" />
+      <workItem from="1626763871716" duration="3885000" />
+      <workItem from="1626783959695" duration="6852000" />
+      <workItem from="1626791952491" duration="409000" />
     </task>
     <task id="LOCAL-00001" summary="bikesharing commit">
       <created>1624820771070</created>
@@ -466,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626687538050</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Simple save &amp; other simple operations by JPA, IT Test, Entity configuration, Primary key">
+      <created>1626769565047</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1626769565047</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,7 +539,8 @@
     <MESSAGE value="nav-solution" />
     <MESSAGE value="Basic Frontend project" />
     <MESSAGE value="log files" />
-    <option name="LAST_COMMIT_MESSAGE" value="log files" />
+    <MESSAGE value="Simple save &amp; other simple operations by JPA, IT Test, Entity configuration, Primary key" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simple save &amp; other simple operations by JPA, IT Test, Entity configuration, Primary key" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
