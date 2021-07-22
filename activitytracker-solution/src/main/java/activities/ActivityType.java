@@ -1,5 +1,5 @@
 package activities;
 
 public enum ActivityType {
-    STATIC, DYNAMIC
+    BIKING, HIKING, RUNNING, BASKETBALL
 }

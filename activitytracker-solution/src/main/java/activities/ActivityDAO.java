@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ActivityDAO {
 
-    private EntityManagerFactory emf;
+    private final EntityManagerFactory emf;
 
     public ActivityDAO(EntityManagerFactory emf) {
         this.emf = emf;
@@ -20,14 +20,14 @@ public class ActivityDAO {
         em.close();
     }
 
-    public Activity findById(long id) {
+    public Activity findActivityById(long id) {
         EntityManager em = emf.createEntityManager();
         Activity activity = em.find(Activity.class, id);
         em.close();
         return activity;
     }
 
-    public List<Activity> listAll() {
+    public List<Activity> listActivities() {
         EntityManager em = emf.createEntityManager();
         List<Activity> activities = em.createQuery("select a from Activity a order by a.name", Activity.class).getResultList();
         em.close();
@@ -43,7 +43,7 @@ public class ActivityDAO {
         em.close();
     }
 
-    public void delete(long id) {
+    public void deleteActivity(long id) {
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
         Activity activity = em.getReference(Activity.class, id);
@@ -60,7 +60,7 @@ public class ActivityDAO {
         em.close();
     }
 
-    public void updateEmployeeNames() {
+    public void updateEActivityNames() {
         EntityManager em = emf.createEntityManager();
         List<Activity> activities = em.createQuery("select a from Activity a order by a.name", Activity.class)
                 .getResultList();
