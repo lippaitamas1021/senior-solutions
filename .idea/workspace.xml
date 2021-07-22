@@ -4,15 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="Simple save &amp; other simple operations by JPA, IT Test, Entity configuration, Primary key">
+    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="JPA operations, IT, Entity configuration">
+      <change afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityBookings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_41.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/mvnw.cmd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/activitytracker-solution/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityId.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityTrackerMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivitytrackerSolutionApplication.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/db/migration/V1__activities.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/static/css/activities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/static/js/activities.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/test/java/activities/ActivityDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/test/java/activities/ActivityDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/test/java/activities/ActivitytrackerSolutionApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/activitytracker-solution/src/test/java/activities/ActivitytrackerSolutionApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/test/java/activities/ActivitytrackerSolutionApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/activitytracker-solution/activities/ActivitytrackerSolutionApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/activitytracker-solution/activities/ActivitytrackerSolutionApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,21 +80,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTTP Request" />
-        <option value="JUnit5 Test Class" />
-        <option value="Enum" />
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="AnnotationType" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1uIc6eNkuIF8UjkSYEBor0mmlpA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -97,14 +115,14 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/locations-spring-solution/src/main/java/locations" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/employees-fe" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/activitytracker-solution/src/main/resources/META-INF/persistence.xml" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.26391983" />
-    <property name="settings.editor.selected.configurable" value="spring.boot" />
+    <property name="project.structure.side.proportion" value="0.277666" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
@@ -116,6 +134,7 @@
       <recent name="moviesolution" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\senior-solutions\activitytracker-solution\src\main\resources" />
       <recent name="D:\senior-solutions\bikesharing" />
       <recent name="D:\senior-solutions\bikesharing\src\test\java\resources" />
     </key>
@@ -133,9 +152,9 @@
       <recent name="bikesharing" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ActivityDAOTest">
-    <configuration name="ActivitiesMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="activities.ActivitiesMain" />
+  <component name="RunManager" selected="JUnit.ActivityDaoTest">
+    <configuration name="ActivityTrackerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activities.ActivityTrackerMain" />
       <module name="activitytracker-solution" />
       <extension name="coverage">
         <pattern>
@@ -147,22 +166,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="nav#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/nav-solution/src/test/java/nav/nav.http" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="nav#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/nav-solution/src/test/java/nav/nav.http" index="2" runType="Run single request">
-      <method v="2" />
     </configuration>
     <configuration name="ActivityDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activitytracker-solution" />
@@ -179,7 +194,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ActivitytrackerSolutionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ActivityDAOTest.testMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="activitytracker-solution" />
       <extension name="coverage">
         <pattern>
@@ -187,7 +202,41 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="activities.ActivitytrackerSolutionApplication" />
+      <option name="PACKAGE_NAME" value="activities" />
+      <option name="MAIN_CLASS_NAME" value="activities.ActivityDAOTest" />
+      <option name="METHOD_NAME" value="testMerge" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActivityDAOTest.testNickNames" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activitytracker-solution" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="activities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="activities" />
+      <option name="MAIN_CLASS_NAME" value="activities.ActivityDAOTest" />
+      <option name="METHOD_NAME" value="testNickNames" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActivityDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activitytracker-solution" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="activities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="activities" />
+      <option name="MAIN_CLASS_NAME" value="activities.ActivityDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -250,11 +299,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ActivityDaoTest" />
         <item itemvalue="JUnit.ActivityDAOTest" />
-        <item itemvalue="Application.ActivitiesMain" />
-        <item itemvalue="Spring Boot.ActivitytrackerSolutionApplication" />
-        <item itemvalue="HTTP Request.nav#2" />
-        <item itemvalue="HTTP Request.nav#1" />
+        <item itemvalue="Application.ActivityTrackerMain" />
+        <item itemvalue="JUnit.ActivityDAOTest.testNickNames" />
+        <item itemvalue="JUnit.ActivityDAOTest.testMerge" />
       </list>
     </recent_temporary>
   </component>
@@ -302,7 +351,13 @@
       <workItem from="1626674375806" duration="11842000" />
       <workItem from="1626763871716" duration="3885000" />
       <workItem from="1626783959695" duration="6852000" />
-      <workItem from="1626791952491" duration="409000" />
+      <workItem from="1626791952491" duration="11375000" />
+      <workItem from="1626803804008" duration="213000" />
+      <workItem from="1626926909397" duration="779000" />
+      <workItem from="1626928598764" duration="7565000" />
+      <workItem from="1626938063882" duration="4759000" />
+      <workItem from="1626957391703" duration="9343000" />
+      <workItem from="1626967593124" duration="1914000" />
     </task>
     <task id="LOCAL-00001" summary="bikesharing commit">
       <created>1624820771070</created>
@@ -493,7 +548,28 @@
       <option name="project" value="LOCAL" />
       <updated>1626769565047</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Simple save &amp; other simple operations by JPA, IT Test, Entity configuration, Primary key #2">
+      <created>1626792532494</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1626792532494</updated>
+    </task>
+    <task id="LOCAL-00029" summary="List of tasks JPA">
+      <created>1626933742808</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1626933742808</updated>
+    </task>
+    <task id="LOCAL-00030" summary="JPA operations, IT, Entity configuration">
+      <created>1626934102920</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1626934102920</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,9 +591,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="bikesharing commit" />
-    <MESSAGE value="bikesharing fixed commit" />
-    <MESSAGE value="bikesharing fixed commit #2" />
     <MESSAGE value="locations spring solution week #1" />
     <MESSAGE value="locations spring solution http request file added" />
     <MESSAGE value="bikeSharing.BikeControllerTest fixed" />
@@ -540,7 +613,10 @@
     <MESSAGE value="Basic Frontend project" />
     <MESSAGE value="log files" />
     <MESSAGE value="Simple save &amp; other simple operations by JPA, IT Test, Entity configuration, Primary key" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simple save &amp; other simple operations by JPA, IT Test, Entity configuration, Primary key" />
+    <MESSAGE value="Simple save &amp; other simple operations by JPA, IT Test, Entity configuration, Primary key #2" />
+    <MESSAGE value="List of tasks JPA" />
+    <MESSAGE value="JPA operations, IT, Entity configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="JPA operations, IT, Entity configuration" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

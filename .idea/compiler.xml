@@ -34,7 +34,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="activitytracker-solution" options="-parameters" />
+      <module name="activitytracker-solution" options="" />
       <module name="bikesharing" options="-parameters" />
       <module name="cars-solution" options="-parameters" />
       <module name="employees-fe-solution" options="-parameters" />

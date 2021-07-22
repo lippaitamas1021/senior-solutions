@@ -1,9 +1,19 @@
 package activities;
 
-import javax.persistence.*;
-import java.time.LocalDate;
-import java.util.Objects;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import javax.persistence.*;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "activities")
 public class Activity {
@@ -20,96 +30,44 @@ public class Activity {
     private String name;
 
     @Column(name = "act_start", nullable = false)
-    private LocalDate startTime;
+    private LocalDateTime startTime;
 
     @Column(name = "act_description", nullable = false, length = 200)
     private String description;
 
-    public Activity() {
-    }
+    private LocalDateTime createdAt;
+
+    private LocalDateTime updatedAt;
+
+    @ElementCollection
+    @CollectionTable(name = "nicknames", joinColumns = @JoinColumn(name = "act_id"))
+    @Column(name = "nickname")
+    private Set<String> nickNames;
+
+    @ElementCollection
+    @CollectionTable(name = "bookings", joinColumns = @JoinColumn(name = "act_id"))
+    @AttributeOverride(name = "startDate", column = @Column(name = "start_date"))
+//    @AttributeOverride(name = "daysTaken", column = @Column(name = "days"))
+    private Set<ActivityBookings> activityBookings;
+
+    @ElementCollection
+    @CollectionTable(name = "labels", joinColumns = @JoinColumn(name = "activity_id"))
+    @Column(name = "label")
+    private List<String> labels = new ArrayList<>();
+
+    @ElementCollection
+    @CollectionTable(name = "phone_numbers", joinColumns = @JoinColumn(name = "act_id"))
+    @MapKeyColumn(name = "phone_type")
+    @Column(name = "phone_number")
+    private Map<String, String> phoneNumbers;
 
     public Activity(String name) {
         this.name = name;
     }
 
-    public Activity(ActivityType activityType, String name, LocalDate startTime) {
+    public Activity(ActivityType activityType, String name, LocalDateTime startTime) {
         this.activityType = activityType;
         this.name = name;
         this.startTime = startTime;
-    }
-
-    public Activity(ActivityType activityType, LocalDate startTime, String description) {
-        this.activityType = activityType;
-        this.startTime = startTime;
-        this.description = description;
-    }
-
-    public Activity(ActivityType activityType, Long id, String name, LocalDate startTime, String description) {
-        this.activityType = activityType;
-        this.id = id;
-        this.name = name;
-        this.startTime = startTime;
-        this.description = description;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public LocalDate getStartTime() {
-        return startTime;
-    }
-
-    public void setStartTime(LocalDate date) {
-        this.startTime = date;
-    }
-
-    public ActivityType getActivityType() {
-        return activityType;
-    }
-
-    public void setActivityType(ActivityType activityType) {
-        this.activityType = activityType;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    @Override
-    public String toString() {
-        return "Activity{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Activity activity = (Activity) o;
-        return activityType == activity.activityType && Objects.equals(id, activity.id) && Objects.equals(name, activity.name) && Objects.equals(startTime, activity.startTime) && Objects.equals(description, activity.description);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(activityType, id, name, startTime, description);
     }
 }

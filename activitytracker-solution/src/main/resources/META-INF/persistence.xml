@@ -1,4 +1,3 @@
-
 <persistence version="2.0"
              xmlns="http://java.sun.com/xml/ns/persistence"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -11,7 +10,7 @@
             <property name="javax.persistence.jdbc.user" value="activities"/>
             <property name="javax.persistence.jdbc.password" value="activities"/>
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:mariadb://localhost/activities"/>
+                      value="jdbc:mariadb://localhost:3306/activities"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="javax.persistence.schema-generation.database.action" value="drop-and-create" />
         </properties>
