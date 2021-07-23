@@ -4,12 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="Attributes with more values (JPA)&#10;List of tasks refreshed (JPA)">
-      <change afterPath="$PROJECT_DIR$/nav-solution/src/main/java/nav/IsValidIntervalValidator.java" afterDir="false" />
+    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="Spring Data JPA">
+      <change afterPath="$PROJECT_DIR$/.jpb/persistence-units.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/Activity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityBookings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityTrackerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/Coordinate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/TrackPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/test/java/activities/ActivityDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityTrackerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/Coordinate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/TrackPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nav-solution/src/main/java/nav/CreateAppointmentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/nav-solution/src/main/java/nav/CreateAppointmentCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nav-solution/src/main/java/nav/IsValidInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/nav-solution/src/main/java/nav/IsValidInterval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nav-solution/src/test/java/nav/nav.http" beforeDir="false" afterPath="$PROJECT_DIR$/nav-solution/src/test/java/nav/nav.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/Activity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/test/java/activities/ActivityDAOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employees-boot-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employees-boot-jpa/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,18 +74,34 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTTP Request" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="AnnotationType" />
+        <option value="HTML File" />
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
   </component>
   <component name="ProjectId" id="1uIc6eNkuIF8UjkSYEBor0mmlpA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -92,12 +126,12 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/activitytracker-solution/src/main/resources/META-INF/persistence.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/meetingrooms-jdbc-solution" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.277666" />
+    <property name="project.structure.side.proportion" value="0.222334" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
@@ -118,54 +152,31 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\senior-solutions\activitytracker-solution\src\main\resources\META-INF" />
+      <recent name="D:\senior-solutions\activitytracker-solution" />
       <recent name="D:\senior-solutions\activitytracker-solution\src\main\resources\static\js" />
       <recent name="D:\senior-solutions\" />
       <recent name="D:\senior-solutions\bikesharing\src\test" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="employees" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="meetingroom" />
       <recent name="activities" />
       <recent name="locations" />
       <recent name="bikesharing" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.NavSolutionApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="nav#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/nav-solution/src/test/java/nav/nav.http" runType="Run single request">
+  <component name="RunManager" selected="JUnit.MeetingRoomsRepositoryIT">
+    <configuration name="employees#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/employees-boot-jpa/src/test/java/employees.http" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="nav#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/nav-solution/src/test/java/nav/nav.http" index="2" runType="Run single request">
+    <configuration name="employees#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/employees-boot-jpa/src/test/java/employees.http" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="nav#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/nav-solution/src/test/java/nav/nav.http" index="3" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="ActivityDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activitytracker-solution" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="activities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="activities" />
-      <option name="MAIN_CLASS_NAME" value="activities.ActivityDAOTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ActivityDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="activitytracker-solution" />
+    <configuration name="ActivityDaoTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="activity-tracker-solution" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="activities.*" />
@@ -175,6 +186,28 @@
       <option name="PACKAGE_NAME" value="activities" />
       <option name="MAIN_CLASS_NAME" value="activities.ActivityDaoTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MeetingRoomsRepositoryIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="meetingrooms-jdbc-solution" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="meetingroom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="meetingroom" />
+      <option name="MAIN_CLASS_NAME" value="meetingroom.MeetingRoomsRepositoryIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActivityTrackerSolutionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="activity-tracker-solution" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="activities.ActivityTrackerSolutionApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -200,6 +233,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EmployeesBootJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="employees-boot-jpa" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="employees.EmployeesBootJpaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InstrumentSolutionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="instrument-solution" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="instrumentsolution.InstrumentSolutionApplication" />
@@ -210,6 +250,13 @@
     <configuration name="LocationsSpringSolutionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="locations-spring-solution" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="locations.LocationsSpringSolutionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MeetingroomDataJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="meetingrooms-jdbc-solution" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="meetingroom.MeetingroomDataJpaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -237,11 +284,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.nav#3" />
-        <item itemvalue="HTTP Request.nav#2" />
-        <item itemvalue="HTTP Request.nav#1" />
-        <item itemvalue="JUnit.ActivityDaoTest" />
-        <item itemvalue="JUnit.ActivityDAOTest" />
+        <item itemvalue="JUnit.MeetingRoomsRepositoryIT" />
+        <item itemvalue="JUnit.ActivityDaoTest (1)" />
+        <item itemvalue="HTTP Request.employees#2" />
+        <item itemvalue="HTTP Request.employees#1" />
+        <item itemvalue="Spring Boot.EmployeesBootJpaApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -296,7 +343,12 @@
       <workItem from="1626938063882" duration="4759000" />
       <workItem from="1626957391703" duration="9343000" />
       <workItem from="1626967593124" duration="2752000" />
-      <workItem from="1627018282829" duration="1782000" />
+      <workItem from="1627018282829" duration="7945000" />
+      <workItem from="1627028728026" duration="840000" />
+      <workItem from="1627029747547" duration="627000" />
+      <workItem from="1627040464079" duration="10438000" />
+      <workItem from="1627052622488" duration="7048000" />
+      <workItem from="1627060134529" duration="225000" />
     </task>
     <task id="LOCAL-00001" summary="bikesharing commit">
       <created>1624820771070</created>
@@ -515,7 +567,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626969811566</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Attributes with more values (JPA)&#10;Nav-solution Interval, Validation">
+      <created>1627020571043</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1627020571043</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Spring Data JPA">
+      <created>1627049602028</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1627049602028</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,8 +603,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="locations spring solution http request file added" />
-    <MESSAGE value="bikeSharing.BikeControllerTest fixed" />
     <MESSAGE value="MockMvc, Restful Template, Validation" />
     <MESSAGE value="Movie solution" />
     <MESSAGE value="instrument-solution commit" />
@@ -562,7 +626,9 @@
     <MESSAGE value="List of tasks JPA" />
     <MESSAGE value="JPA operations, IT, Entity configuration" />
     <MESSAGE value="Attributes with more values (JPA)&#10;List of tasks refreshed (JPA)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attributes with more values (JPA)&#10;List of tasks refreshed (JPA)" />
+    <MESSAGE value="Attributes with more values (JPA)&#10;Nav-solution Interval, Validation" />
+    <MESSAGE value="Spring Data JPA" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Data JPA" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

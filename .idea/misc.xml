@@ -21,7 +21,9 @@
         <option value="$PROJECT_DIR$/instrument-solution/pom.xml" />
         <option value="$PROJECT_DIR$/nav-solution/pom.xml" />
         <option value="$PROJECT_DIR$/employees-fe/pom.xml" />
-        <option value="$PROJECT_DIR$/activitytracker-solution/pom.xml" />
+        <option value="$PROJECT_DIR$/employees-boot-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/activity-tracker-solution/pom.xml" />
+        <option value="$PROJECT_DIR$/meetingrooms-data-jpa/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/activity-tracker-solution/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bikesharing/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bikesharing/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cars-solution/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cars-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/employees-boot-jpa/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/employees-fe/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/employees-solution/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/europeanchampionship-solution/src/main/java" charset="UTF-8" />
@@ -15,6 +17,8 @@
     <file url="file://$PROJECT_DIR$/locations-solution/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/locations-spring-solution/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/locations-spring-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meetingrooms-data-jpa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meetingrooms-data-jpa/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meetingrooms-solution/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/meetingrooms-solution/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/movie-solution/src/main/java" charset="UTF-8" />

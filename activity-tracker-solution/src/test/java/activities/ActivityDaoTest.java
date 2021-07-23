@@ -13,7 +13,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.*;
 
-class ActivityDaoTest {
+public class ActivityDaoTest {
 
     private ActivityDao activityDao;
 
@@ -22,93 +22,103 @@ class ActivityDaoTest {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("pu");
         activityDao = new ActivityDao(emf);
     }
+
     @Test
     public void testSaveThenFindById() {
         Activity activity = new Activity("Biking");
-        activityDao.save(activity);
+        activityDao.saveActivity(activity);
         long id = activity.getId();
         Activity anotherActivity = activityDao.findActivityById(id);
         assertEquals("Biking", anotherActivity.getName());
     }
+
     @Test
     public void testSaveThenListAll() {
-        activityDao.save(new Activity("Hiking"));
-        activityDao.save(new Activity("Running"));
+        activityDao.saveActivity(new Activity("Hiking"));
+        activityDao.saveActivity(new Activity("Running"));
         List<Activity> activities = activityDao.listActivities();
         assertEquals(List.of("Hiking", "Running"), activities.stream().map(Activity::getName).collect(Collectors.toList()));
     }
+
     @Test
     public void testChangeName() {
         Activity activity = new Activity("Playing basketball");
-        activityDao.save(activity);
+        activityDao.saveActivity(activity);
         long id = activity.getId();
         activityDao.changeName(id, "Hiking in the forest");
         Activity anotherActivity = activityDao.findActivityById(id);
         assertEquals("Hiking in the forest", anotherActivity.getName());
     }
+
     @Test
     public void testDelete() {
         Activity activity = new Activity("Running");
-        activityDao.save(activity);
+        activityDao.saveActivity(activity);
         long id = activity.getId();
         activityDao.deleteActivity(id);
         List<Activity> activities = activityDao.listActivities();
         assertTrue(activities.isEmpty());
     }
+
     @Test
     public void testWithWrongId() {
         Activity activity = activityDao.findActivityById(21L);
         assertNull(activity);
     }
+
     @Test
     public void testActivityWithAttributes() {
         for(int i = 0; i < 10; i++) {
-            activityDao.save(new Activity(ActivityType.RUNNING, "Hiking", LocalDateTime.of(2021, 7, 14, 15, 30)));
+            activityDao.saveActivity(new Activity(LocalDateTime.of(2021, 7, 14, 15, 30), "Hiking", ActivityType.HIKING));
         }
         Activity activity = activityDao.listActivities().get(0);
         assertEquals(LocalDateTime.of(2021,7,14, 15, 30), activity.getStartTime());
     }
+
     @Test
     public void testSaveActivityAndChangeState() {
         Activity activity = new Activity("Bikling");
-        activityDao.save(activity);
+        activityDao.saveActivity(activity);
         activity.setName("Biking");
         Activity modifiedActivity = activityDao.findActivityById(activity.getId());
         assertEquals("Biking", modifiedActivity.getName());
         assertNotSame(activity, modifiedActivity);
     }
+
     @Test
     public void testMerge() {
         Activity activity = new Activity("debuging");
-        activityDao.save(activity);
+        activityDao.saveActivity(activity);
         activity.setName("debugging");
-        activityDao.updateActivity(activity);
+        activityDao.updateActivity(activity.getId(), activity.getDescription());
         Activity modifiedActivity = activityDao.findActivityById(activity.getId());
         assertEquals("debugging", modifiedActivity.getName());
     }
+
     @Test
     public void testFlush() {
         for (int i = 0; i < 10; i++) {
-            activityDao.save(new Activity("Running in group" + i));
+            activityDao.saveActivity(new Activity("Running in group" + i));
         }
         activityDao.updateEActivityNames();
     }
+
     @Test
     public void testUpdateActivity() {
         Activity activity = new Activity("Biking on road");
-        activityDao.save(activity);
+        activityDao.saveActivity(activity);
         Activity expected = activityDao.findActivityById(activity.getId());
         assertEquals("Biking on road", expected.getDescription());
         activityDao.updateActivity(activity.getId(), "Preparing for the Tour de France");
         Activity modifiedActivity = activityDao.findActivityById(activity.getId());
         assertEquals("Preparing for the Tour de France", modifiedActivity.getDescription());
     }
+
     @Test
     public void testFindActivityByIdWithLabels() {
-        Activity activity = new Activity(ActivityType.BASKETBALL,"Playing basketball", LocalDateTime.of(
-                2021,7,20,10,0));
+        Activity activity = new Activity(LocalDateTime.of(2021,7,20,10,0),"Playing basketball", ActivityType.BASKETBALL);
         activity.setLabels(Arrays.asList("játszótér", "Debrecen"));
-        activityDao.save(activity);
+        activityDao.saveActivity(activity);
         Activity expected = activityDao.findActivityByIdWithLabels(activity.getId());
         assertEquals(Arrays.asList("játszótér", "Debrecen"), expected.getLabels());
     }
@@ -116,7 +126,7 @@ class ActivityDaoTest {
     public void testNickNames() {
         Activity activity = new Activity("Horgászás");
         activity.setNickNames(Set.of("Pecázás"));
-        activityDao.save(activity);
+        activityDao.saveActivity(activity);
         Activity anotherActivity = activityDao.findActivityByIdWithNickNames(activity.getId());
         assertEquals(Set.of("Pecázás"), anotherActivity.getNickNames());
     }
@@ -125,7 +135,7 @@ class ActivityDaoTest {
         Activity activity = new Activity("Running at Margaret Island");
         activity.setActivityBookings(Set.of(new ActivityBookings(LocalDate.of(2021,7,31), 1),
                 new ActivityBookings(LocalDate.of(2021,9,1), 2)));
-        activityDao.save(activity);
+        activityDao.saveActivity(activity);
         Activity anotherActivity = activityDao.findActivityByIdWithEntries(activity.getId());
         assertEquals(2, anotherActivity.getActivityBookings().size());
     }
@@ -133,10 +143,9 @@ class ActivityDaoTest {
     public void testPhoneNumbers() {
         Activity activity = new Activity("Basketball match");
         activity.setPhoneNumbers(Map.of("Johnny", "123456789", "Tommy", "234567890"));
-        activityDao.save(activity);
+        activityDao.saveActivity(activity);
         Activity anotherActivity = activityDao.findActivityByIdWithPhoneNumbers(activity.getId());
         assertEquals("123456789", anotherActivity.getPhoneNumbers().get("Johnny"));
         assertEquals("234567890", anotherActivity.getPhoneNumbers().get("Tommy"));
     }
-
 }
