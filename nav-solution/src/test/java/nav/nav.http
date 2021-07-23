@@ -10,7 +10,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-"taxNumber":"1234567890",
+"taxNumber":"0123456789",
   "interval": {
       "start": "2021-07-19T08:56:00",
       "end": "2021-07-19T08:59:00"
