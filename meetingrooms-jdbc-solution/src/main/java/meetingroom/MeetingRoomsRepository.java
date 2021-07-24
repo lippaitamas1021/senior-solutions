@@ -6,7 +6,7 @@ import javax.persistence.EntityManagerFactory;
 import java.util.List;
 
 @AllArgsConstructor
-public class MeetingRoomsRepository implements MeetingRooms {
+public class MeetingRoomsRepository {
 
     private EntityManagerFactory factory;
 

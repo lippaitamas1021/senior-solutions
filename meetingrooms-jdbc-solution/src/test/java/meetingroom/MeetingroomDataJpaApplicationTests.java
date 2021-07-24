@@ -9,5 +9,4 @@ class MeetingroomDataJpaApplicationTests {
     @Test
     void contextLoads() {
     }
-
 }

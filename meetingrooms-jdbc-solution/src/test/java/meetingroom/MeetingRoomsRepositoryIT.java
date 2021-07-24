@@ -14,20 +14,11 @@ class MeetingRoomsRepositoryIT {
     MeetingRoomsRepository repository = new MeetingRoomsRepository(factory);
 
     @Test
-    @DisplayName("Save & List")
-    void testSaveThenList() {
+    @DisplayName("Save & List Ordered by name")
+    public void testSaveThenList() {
         repository.save("Jupiter", 20, 25);
         repository.save("Neptunus", 15, 20);
         List<String> names = repository.getMeetingRoomsOrderedByName();
         assertEquals(List.of("Jupiter", "Neptunus"), names);
-    }
-
-    @Test
-    void getMeetingRoomsOrderedByName() {
-        EntityManager em = factory.createEntityManager();
-        List<String> names = em.createQuery("select mr.name from MeetingRoom mr order by mr.name", String.class)
-                .getResultList();
-        em.close();
-        return names;
     }
 }
