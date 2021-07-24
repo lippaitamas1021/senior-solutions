@@ -4,30 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="Spring Data JPA">
-      <change afterPath="$PROJECT_DIR$/.jpb/persistence-units.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/Activity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityBookings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityTrackerMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/Coordinate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/TrackPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/test/java/activities/ActivityDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityTrackerMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/Coordinate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/TrackPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="MeetingRoom - Integration test fixed">
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activitytracker-solution/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/Activity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/test/java/activities/ActivityDAOTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employees-boot-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employees-boot-jpa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityBookings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityTrackerMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/Coordinate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/TrackPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employees-fe/pom.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,8 +94,13 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="flattenModules" value="true" />
+    <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="h2&#10;mariadb&#10;mysql" />
@@ -126,12 +117,12 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/meetingrooms-jdbc-solution" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/employees-fe-solution" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.222334" />
+    <property name="project.structure.side.proportion" value="0.35135135" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
@@ -254,6 +245,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MeetingroomDataJpaApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="meetingrooms-jdbc-solution" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="meetingroom.MeetingroomDataJpaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MeetingroomDataJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="meetingrooms-jdbc-solution" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="meetingroom.MeetingroomDataJpaApplication" />
@@ -348,7 +346,9 @@
       <workItem from="1627029747547" duration="627000" />
       <workItem from="1627040464079" duration="10438000" />
       <workItem from="1627052622488" duration="7048000" />
-      <workItem from="1627060134529" duration="225000" />
+      <workItem from="1627060134529" duration="1175000" />
+      <workItem from="1627101796492" duration="1358000" />
+      <workItem from="1627103251579" duration="160000" />
     </task>
     <task id="LOCAL-00001" summary="bikesharing commit">
       <created>1624820771070</created>
@@ -581,7 +581,35 @@
       <option name="project" value="LOCAL" />
       <updated>1627049602028</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Activity Tracker bugs fixed">
+      <created>1627060832238</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1627060832269</updated>
+    </task>
+    <task id="LOCAL-00035" summary="MeetingRoom JDBC">
+      <created>1627061275538</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1627061275538</updated>
+    </task>
+    <task id="LOCAL-00036" summary="MeetingRoom JDBC pom.xml modified">
+      <created>1627102521909</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1627102521909</updated>
+    </task>
+    <task id="LOCAL-00037" summary="MeetingRoom - Integration test fixed">
+      <created>1627103086055</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1627103086055</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,10 +631,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="MockMvc, Restful Template, Validation" />
-    <MESSAGE value="Movie solution" />
-    <MESSAGE value="instrument-solution commit" />
-    <MESSAGE value="movie-solution commit bugs fixed &amp; validation done" />
     <MESSAGE value="Report on the tasks done" />
     <MESSAGE value="Report on the tasks done (moved to the right directory)" />
     <MESSAGE value="Instrument solution - bugs fixed" />
@@ -628,7 +652,11 @@
     <MESSAGE value="Attributes with more values (JPA)&#10;List of tasks refreshed (JPA)" />
     <MESSAGE value="Attributes with more values (JPA)&#10;Nav-solution Interval, Validation" />
     <MESSAGE value="Spring Data JPA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Data JPA" />
+    <MESSAGE value="Activity Tracker bugs fixed" />
+    <MESSAGE value="MeetingRoom JDBC" />
+    <MESSAGE value="MeetingRoom JDBC pom.xml modified" />
+    <MESSAGE value="MeetingRoom - Integration test fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="MeetingRoom - Integration test fixed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

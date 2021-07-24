@@ -24,6 +24,8 @@
         <option value="$PROJECT_DIR$/employees-boot-jpa/pom.xml" />
         <option value="$PROJECT_DIR$/activity-tracker-solution/pom.xml" />
         <option value="$PROJECT_DIR$/meetingrooms-data-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/meetingrooms-jdbc-solution/pom.xml" />
+        <option value="$PROJECT_DIR$/employees-fe-solution/pom.xml" />
       </list>
     </option>
   </component>

@@ -34,6 +34,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="16">
       <module name="activitytracker-solution" target="16" />
+      <module name="employees-fe-solution" target="16" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
