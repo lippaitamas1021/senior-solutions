@@ -4,15 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="MeetingRoom - Integration test fixed">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityBookings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityTrackerMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/ActivityType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/Coordinate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activitytracker-solution/src/main/java/activities/TrackPoint.java" beforeDir="false" />
+    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="Employees Frontend project synchronized">
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/java/employees/CreateEmployeeCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/java/employees/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/java/employees/EmployeeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/java/employees/EmployeeNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/java/employees/EmployeesApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/java/employees/EmployeesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/java/employees/EmployeesDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/java/employees/EmployeesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/java/employees/IsValidName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/java/employees/NameValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/java/employees/UpdateEmployeeCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/resources/cats.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/resources/messages_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/resources/messages_hu.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/resources/static/css/employees.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/main/resources/static/js/employees.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/test/employees.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employees-fe-solution/src/test/resources/employee-dto.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/employees-fe/pom.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -348,7 +366,7 @@
       <workItem from="1627052622488" duration="7048000" />
       <workItem from="1627060134529" duration="1175000" />
       <workItem from="1627101796492" duration="1358000" />
-      <workItem from="1627103251579" duration="160000" />
+      <workItem from="1627103251579" duration="1054000" />
     </task>
     <task id="LOCAL-00001" summary="bikesharing commit">
       <created>1624820771070</created>
@@ -609,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627103086055</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Activity Tracker project - bugs fixed&#10;MAVEN configuration files">
+      <created>1627105394923</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1627105394923</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,8 +656,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Report on the tasks done" />
-    <MESSAGE value="Report on the tasks done (moved to the right directory)" />
     <MESSAGE value="Instrument solution - bugs fixed" />
     <MESSAGE value="Locations basic project by Gradle" />
     <MESSAGE value="Spring boot exercises list refreshed" />
@@ -656,7 +679,9 @@
     <MESSAGE value="MeetingRoom JDBC" />
     <MESSAGE value="MeetingRoom JDBC pom.xml modified" />
     <MESSAGE value="MeetingRoom - Integration test fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="MeetingRoom - Integration test fixed" />
+    <MESSAGE value="Activity Tracker project - bugs fixed&#10;MAVEN configuration files" />
+    <MESSAGE value="Employees Frontend project synchronized" />
+    <option name="LAST_COMMIT_MESSAGE" value="Employees Frontend project synchronized" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
