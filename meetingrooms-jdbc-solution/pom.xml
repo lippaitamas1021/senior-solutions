@@ -11,9 +11,9 @@
     </parent>
 
     <groupId>training</groupId>
-    <artifactId>meetingrooms-data-jpa</artifactId>
+    <artifactId>meetingrooms-jdbc-solution</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>meetingroom-data-jpa</name>
+    <name>meetingrooms-jdbc-solution</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
