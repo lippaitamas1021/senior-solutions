@@ -10,10 +10,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>microservices.training</groupId>
-	<artifactId>employees</artifactId>
+	<groupId>T360</groupId>
+	<artifactId>employees-fe-solution</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>employees</name>
+	<name>employees-fe-solution</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
