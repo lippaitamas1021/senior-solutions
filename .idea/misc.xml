@@ -26,6 +26,10 @@
         <option value="$PROJECT_DIR$/meetingrooms-data-jpa/pom.xml" />
         <option value="$PROJECT_DIR$/meetingrooms-jdbc-solution/pom.xml" />
         <option value="$PROJECT_DIR$/employees-fe-solution/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/activity-tracker-sb-jpa-solution/pom.xml" />
+        <option value="$PROJECT_DIR$/../IT/Training360/5) Haladó JAVA képzés/Tananyag/3) Adatbázis programozás Java nyelven - JPA/java-jpa-public/jpa/demos/transaction/pom.xml" />
+        <option value="$PROJECT_DIR$/movie-jpa-solution/pom.xml" />
       </list>
     </option>
   </component>

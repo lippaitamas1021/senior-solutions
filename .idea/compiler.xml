@@ -17,15 +17,19 @@
         <module name="meetingrooms-jdbc-solution" />
         <module name="cars-solution" />
         <module name="locations-spring-solution" />
+        <module name="movie-jpa-solution" />
         <module name="europeanchampionship-solution" />
         <module name="movies-solution" />
         <module name="nav-solution" />
         <module name="movie-solution" />
         <module name="activity-tracker-solution" />
+        <module name="demo" />
+        <module name="activity-tracker-transaction-solution" />
         <module name="locations-solution" />
         <module name="meetingrooms-solution" />
         <module name="employees-boot-jpa" />
         <module name="instrument-solution" />
+        <module name="activity-tracker-sb-jpa-solution" />
         <module name="bikesharing" />
         <module name="streamsdemo-solution" />
         <module name="employees-fe-solution" />
@@ -38,15 +42,19 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="activity-tracker-sb-jpa-solution" options="-parameters" />
       <module name="activity-tracker-solution" options="-parameters" />
+      <module name="activity-tracker-transaction-solution" options="-parameters" />
       <module name="activitytracker-solution" options="" />
       <module name="bikesharing" options="-parameters" />
       <module name="cars-solution" options="-parameters" />
+      <module name="demo" options="-parameters" />
       <module name="employees-boot-jpa" options="-parameters" />
       <module name="employees-fe-solution" options="-parameters" />
       <module name="instrument-solution" options="-parameters" />
       <module name="locations-spring-solution" options="-parameters" />
       <module name="meetingrooms-jdbc-solution" options="-parameters" />
+      <module name="movie-jpa-solution" options="-parameters" />
       <module name="movie-solution" options="-parameters" />
       <module name="movies-solution" options="-parameters" />
       <module name="nav-solution" options="-parameters" />
