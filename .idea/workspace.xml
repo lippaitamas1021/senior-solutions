@@ -4,41 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="Activity Tracker project by Spring Boot &amp; JPA">
-      <change afterPath="$PROJECT_DIR$/activity-tracker-sb-jpa-solution/src/main/java/activities/Activity.java" afterDir="false" />
+    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="JPA Kapcsolatok, Több-több kapcsolat, Entitások Map-ekben">
       <change afterPath="$PROJECT_DIR$/activity-tracker-sb-jpa-solution/src/main/java/activities/ActivityDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/activity-tracker-sb-jpa-solution/src/test/java/activities/ActivityDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/snippets.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActBaseDataDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/Area.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/AreaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/CustomizedActivityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/CustomizedActivityRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/LocationDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/PhoneNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/Visitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/resources/db/migration/V1__activities.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/test/java/activities/AreaDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/test/java/activities/LocationDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-solution/src/test/java/org/mariadb/jdbc/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-tracker-sb-jpa-solution/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/activity-tracker-sb-jpa-solution/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-tracker-solution/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/activity-tracker-solution/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityBookings.java" beforeDir="false" afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityBookings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityTrackerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityTrackerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityTrackerSolutionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/ActivityTrackerSolutionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/TrackPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/java/activities/TrackPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-tracker-solution/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-tracker-solution/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/activity-tracker-solution/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-tracker-solution/src/test/java/activities/ActivityDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/activity-tracker-solution/src/test/java/activities/ActivityDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-tracker-solution/src/test/java/activities/ActivityTrackerSolutionApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/activity-tracker-solution/src/test/java/activities/ActivityTrackerSolutionApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locations-spring-solution/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/locations-spring-solution/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meetingrooms-jdbc-solution/src/main/java/meetingroom/MeetingRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/meetingrooms-jdbc-solution/src/main/java/meetingroom/MeetingRoom.java" afterDir="false" />
     </list>
@@ -465,7 +433,7 @@
       <workItem from="1627388448351" duration="7363000" />
       <workItem from="1627457469607" duration="4717000" />
       <workItem from="1627463479272" duration="2327000" />
-      <workItem from="1627474493617" duration="523000" />
+      <workItem from="1627474493617" duration="900000" />
     </task>
     <task id="LOCAL-00001" summary="bikesharing commit">
       <created>1624820771070</created>
@@ -754,7 +722,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627370310434</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="JPA Kapcsolatok, Több-több kapcsolat, Entitások Map-ekben">
+      <created>1627475409816</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1627475409816</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -776,7 +751,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Spring boot exercises list refreshed" />
     <MESSAGE value="Swagger UI, Rest Assured, Content Negotiation, Validation, SB configuration &amp; logging" />
     <MESSAGE value="Spring JdbcTemplate" />
     <MESSAGE value="Spring Data ControllerIT, JPA, MariaDB, Docker" />
@@ -801,7 +775,8 @@
     <MESSAGE value="Employees Frontend project synchronized" />
     <MESSAGE value="Configuration files" />
     <MESSAGE value="Activity Tracker project by Spring Boot &amp; JPA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Activity Tracker project by Spring Boot &amp; JPA" />
+    <MESSAGE value="JPA Kapcsolatok, Több-több kapcsolat, Entitások Map-ekben" />
+    <option name="LAST_COMMIT_MESSAGE" value="JPA Kapcsolatok, Több-több kapcsolat, Entitások Map-ekben" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
