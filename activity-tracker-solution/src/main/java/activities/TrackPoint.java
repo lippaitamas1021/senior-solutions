@@ -3,17 +3,23 @@ package activities;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
+@Entity
 public class TrackPoint {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column(name = "tp_time")
     private LocalDateTime time;
+
     private double lat;
+
     private double lon;
+
     @ManyToOne
     private Activity activity;
+
     public TrackPoint() {
     }
 
