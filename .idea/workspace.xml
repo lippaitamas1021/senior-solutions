@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="JPA Kapcsolatok, Több-több kapcsolat, Entitások Map-ekben">
-      <change afterPath="$PROJECT_DIR$/activity-tracker-sb-jpa-solution/src/main/java/activities/ActivityDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-tracker-sb-jpa-solution/src/test/java/activities/ActivityDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locations-spring-solution/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/locations-spring-solution/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meetingrooms-jdbc-solution/src/main/java/meetingroom/MeetingRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/meetingrooms-jdbc-solution/src/main/java/meetingroom/MeetingRoom.java" afterDir="false" />
+    <list default="true" id="3b5248e4-22cb-4ff5-96cb-41ea34272027" name="Default Changelist" comment="pom.xml fixed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-feladatok.md" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-feladatok.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +170,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -433,7 +442,7 @@
       <workItem from="1627388448351" duration="7363000" />
       <workItem from="1627457469607" duration="4717000" />
       <workItem from="1627463479272" duration="2327000" />
-      <workItem from="1627474493617" duration="900000" />
+      <workItem from="1627474493617" duration="1204000" />
     </task>
     <task id="LOCAL-00001" summary="bikesharing commit">
       <created>1624820771070</created>
@@ -729,7 +738,28 @@
       <option name="project" value="LOCAL" />
       <updated>1627475409816</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="JPA Spring Boot-tal">
+      <created>1627475502442</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1627475502442</updated>
+    </task>
+    <task id="LOCAL-00044" summary="JDBC">
+      <created>1627475588777</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1627475588777</updated>
+    </task>
+    <task id="LOCAL-00045" summary="pom.xml fixed">
+      <created>1627475640963</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1627475640963</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -751,9 +781,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Swagger UI, Rest Assured, Content Negotiation, Validation, SB configuration &amp; logging" />
-    <MESSAGE value="Spring JdbcTemplate" />
-    <MESSAGE value="Spring Data ControllerIT, JPA, MariaDB, Docker" />
     <MESSAGE value="List of tasks refreshed" />
     <MESSAGE value="ActivityTracker project using JPA; (Entity, DAO, Integration test)" />
     <MESSAGE value="JPA configuration" />
@@ -776,7 +803,10 @@
     <MESSAGE value="Configuration files" />
     <MESSAGE value="Activity Tracker project by Spring Boot &amp; JPA" />
     <MESSAGE value="JPA Kapcsolatok, Több-több kapcsolat, Entitások Map-ekben" />
-    <option name="LAST_COMMIT_MESSAGE" value="JPA Kapcsolatok, Több-több kapcsolat, Entitások Map-ekben" />
+    <MESSAGE value="JPA Spring Boot-tal" />
+    <MESSAGE value="JDBC" />
+    <MESSAGE value="pom.xml fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom.xml fixed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
