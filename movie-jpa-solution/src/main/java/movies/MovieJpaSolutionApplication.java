@@ -22,4 +22,6 @@ public class MovieJpaSolutionApplication {
 	public ObjectMapper objectMapper() {
 		return new ObjectMapper().findAndRegisterModules();
 	}
+
+//    docker run -d -e MYSQL_DATABASE=movies -e MYSQL_USER=movies -e MYSQL_PASSWORD=movies -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -p 3307:3306 --name movie-mariadb mariadb
 }

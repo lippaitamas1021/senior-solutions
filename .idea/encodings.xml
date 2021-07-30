@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../Fölösleges projektek/javax-mcr-public/demos-on-videos/javax-mcr-m04-l02-spring-data-jpa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Fölösleges projektek/javax-mcr-public/demos-on-videos/javax-mcr-m04-l02-spring-data-jpa/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../IT/Training360/5) Haladó JAVA képzés/Tananyag/3) Adatbázis programozás Java nyelven - JPA/java-jpa-public/jpa/demos/transaction/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../IT/Training360/5) Haladó JAVA képzés/Tananyag/3) Adatbázis programozás Java nyelven - JPA/java-jpa-public/jpa/demos/transaction/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/activity-tracker-sb-jpa-solution/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/activity-tracker-solution/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/activity-tracker-solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/authors/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bikesharing/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bikesharing/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cars-solution/src/main/java" charset="UTF-8" />

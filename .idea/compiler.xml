@@ -16,6 +16,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="meetingrooms-jdbc-solution" />
         <module name="cars-solution" />
+        <module name="employees-spring-data-jpa-solution" />
         <module name="locations-spring-solution" />
         <module name="movie-jpa-solution" />
         <module name="europeanchampionship-solution" />
@@ -34,6 +35,7 @@
         <module name="streamsdemo-solution" />
         <module name="employees-fe-solution" />
         <module name="employees-solution" />
+        <module name="authors" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="16">
@@ -46,11 +48,13 @@
       <module name="activity-tracker-solution" options="-parameters" />
       <module name="activity-tracker-transaction-solution" options="-parameters" />
       <module name="activitytracker-solution" options="" />
+      <module name="authors" options="-parameters" />
       <module name="bikesharing" options="-parameters" />
       <module name="cars-solution" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="employees-boot-jpa" options="-parameters" />
       <module name="employees-fe-solution" options="-parameters" />
+      <module name="employees-spring-data-jpa-solution" options="-parameters" />
       <module name="instrument-solution" options="-parameters" />
       <module name="locations-spring-solution" options="-parameters" />
       <module name="meetingrooms-jdbc-solution" options="-parameters" />
