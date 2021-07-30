@@ -1,0 +1,27 @@
+###
+
+GET http://localhost:8080/api/authors/
+Accept: application/json
+
+###
+
+POST http://localhost:8080/api/authors
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Dan Brown"
+}
+
+###
+POST http://localhost:8080/api/authors/2/books
+Content-Type: application/json
+Accept: application/json
+
+{
+  "isbnNumber": "1234567890123",
+  "title": "JAVA"
+}
+
+###
+DELETE http://localhost:8080/api/authors/1
