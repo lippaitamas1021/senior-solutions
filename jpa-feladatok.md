@@ -10,6 +10,12 @@
 * [X] Entitások életciklusa
 * [X] Többértékű attribútumok
 * [X] Kapcsolatok
-* [X] Lekérdezések
-* [X] Haladó lekérdezések
-* [ ] Deklaratív tranzakciókezelés
+  [X] Több-több kapcsolatok
+  [X] Entitások mapekben
+  [ ] Beágyazott objektumok és másodlagos tábla
+  [ ] Öröklődés
+  [X] Lekérdezések
+  [X] Haladó lekérdezések
+  [ ] Bulk műveletek
+  [X] JPA Spring Boottal
+  
